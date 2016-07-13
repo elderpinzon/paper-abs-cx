@@ -1,0 +1,121 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.1 distribution.
+%   Version 4.1r of REVTeX, August 2010
+%
+%   Copyright (c) 2009, 2010 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.1
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+showpacs,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+ prc,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-1}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+\usepackage{lineno}
+\usepackage{multirow}
+
+\linenumbers\relax % Commence numbering lines
+
+\begin{document}
+
+\title{Separate measurement of absorption and charge exchange cross sections of \texorpdfstring{$\pi^+$}{p} on carbon by DUET}% 
+
+\author{E. S. Pinzon Guerra$^1$, S. Berkman$^2$, S. Bhadra$^1$, C. Cao$^2$, P. de Perio$^3$, Y. Hayato$^4$, K. Ieki$^5$, M. Ikeda$^4$, Y. Kanazawa$^6$,  J. Kim$^2$, P. Kitching$^7$, K. Mahn$^8$, T. Nakaya$^5$,  M. Nicholson$^7$, K. Olchanski$^7$, S. Rettie$^{2,7}$, H. A. Tanaka$^3$, S. Tobayama$^2$, M. J. Wilking$^9$, T. Yamauchi$^5$, S. Yen$^7$, M. Yokoyama$^6$}
+
+\affiliation{%
+$^1$York University, Department of Physics and Astronomy, Toronto, Ontario, Canada\\
+$^2$University of British Columbia, Department of Physics and Astronomy, Vancouver, British Columbia, Canada\\
+$^3$University of Toronto, Department of Physics, Toronto, Ontario, Canada\\
+$^4$University of Tokyo, Institute for Cosmic Ray Research, Kamioka Observatory, Kamioka, Japan\\
+$^5$Kyoto University, Department of Physics, Kyoto, Japan\\
+$^6$University of Tokyo, Department of Physics, Tokyo, Japan\\
+$^7$TRIUMF, Vancouver, British Columbia, Canada\\
+$^8$Michigan State University, Department of Physics and Astronomy, East Lansing, Michigan, U.S.A\\
+$^9$State University of New York at Stony Brook, Department of Physics and Astronomy, Stony Brook, New York, U.S.A.
+}%
+
+\collaboration{DUET Collaboration}%\noaffiliation
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+
+The DUET Collaboration reports the separate measurement of the absorption and charge exchange cross sections of positively charged pions with carbon nuclei for the momentum range 201.6 MeV$/c$ to 295.1 MeV$/c$. A scintillator fiber detector with interspersed lead was located downstream of the interaction point and was used to identify forward going photons from $\pi^{0}$ decays. The uncertainties for absorption and charge exchange are $\sim$9.5\% and $\sim$18\%, respectively. The results are in agreement with previous experiments and a covariance matrix for the 10 data points measured is reported. These measurements will be used as input for tuning existing nuclear cascade models and to constrain pion nuclear final state interactions and secondary interactions in neutrino generators.
+
+\end{abstract}
+
+\pacs{25.80.−e,13.75.−n,24.10.Lx,29.40.Gx}% PACS, the Physics and Astronomy
+                             % Classification Scheme.
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\input{introduction.tex}
+\input{experimental.tex}
+\input{event_selection.tex}
+\input{uncertainties.tex}
+\input{result.tex}
+
+\begin{acknowledgments}
+We are grateful for all the technical and financial support received from TRIUMF.
+E. S. Pinzon Guerra acknowledges support through the Ontario Graduate Scholarship.
+This work was supported by JSPS KAKENHI Grants Number 22684008, 26247034, 18071005, 20674004
+and the Global COE program in Japan. M. I. and K. I. would like to acknowledge support from JSPS.
+We acknowledge the support from the NSERC Discovery Grants program, the Canadian Foundation for Innovation’s
+Leadership Opportunity Fund, the British Columbia Knowledge Development Fund, and NRC in Canada.
+Computations were performed on the GPC supercomputer at the SciNet HPC Consortium \cite{scinet}
+SciNet is funded by: the Canada Foundation for Innovation under the auspices of Compute Canada; 
+the Government of Ontario; Ontario Research Fund - Research Excellence; and the University of Toronto.
+\end{acknowledgments}
+
+% The \nocite command causes all entries in a bibliography to be printed out
+% whether or not they are actually referenced in the text. This is appropriate
+% for the sample file to show the different styles of references, but authors
+% most likely will not want to use it.
+%\nocite{*}
+
+\bibliography{paperNotes}% Produces the bibliography via BibTeX.
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
