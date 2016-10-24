@@ -50,6 +50,7 @@ showpacs,
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 \usepackage{lineno}
 \usepackage{multirow}
+\usepackage{color}
 
 \linenumbers\relax % Commence numbering lines
 
@@ -78,7 +79,8 @@ $^9$State University of New York at Stony Brook, Department of Physics and Astro
 
 \begin{abstract}
 
-The DUET Collaboration reports on the measurements of the absorption and charge exchange cross sections of positively charged pions on carbon nuclei for the momentum range 201.6 MeV$/c$ to 295.1 MeV$/c$. The uncertainties on the absorption and charge exchange cross sections are $\sim$9.5\% and $\sim$18\%, respectively. The results are in good agreement with previous experiments. A covariance correlating the 5 $\sigma_{\mathrm{ABS}}$ and 5 $\sigma_{\mathrm{CX}}$ measured data points is also reported for the first time. These measurements will be used as input for tuning existing nuclear cascade models and to constrain pion nuclear final state interactions and secondary interactions in Monte Carlo neutrino generators.
+The DUET Collaboration reports on the measurements of the absorption {\color{red}($\sigma_{\mathrm{ABS}}$)} and charge exchange {\color{red}($\sigma_{\mathrm{CX}}$)} cross sections of positively charged pions on carbon nuclei for the momentum range 201.6 MeV$/c$ to 295.1 MeV$/c$. The uncertainties on the absorption and charge exchange cross sections are $\sim$9.5\% and $\sim$18\%, respectively. The results are in good agreement with previous experiments. A covariance correlating the 5 $\sigma_{\mathrm{ABS}}$ and 5 $\sigma_{\mathrm{CX}}$ measured data points is also reported for the first time. These measurements will be used as input for tuning existing nuclear cascade models and to constrain pion nuclear final state interactions and secondary interactions.
+%in Monte Carlo neutrino generators.
 %A scintillator fiber detector with interspersed lead was located downstream of the interaction point and was used to identify forward going photons from $\pi^{0}$ decays. 
 
 \end{abstract}
@@ -93,7 +95,9 @@ The DUET Collaboration reports on the measurements of the absorption and charge 
 
 \input{introduction.tex}
 \input{experimental.tex}
+\input{physics.tex}
 \input{event_selection.tex}
+\input{cross_section.tex}
 \input{uncertainties.tex}
 \input{result.tex}
 
@@ -101,7 +105,7 @@ The DUET Collaboration reports on the measurements of the absorption and charge 
 We are grateful for all the technical and financial support received from TRIUMF.
 E. S. Pinzon Guerra acknowledges support through the Ontario Graduate Scholarship.
 This work was supported by JSPS KAKENHI Grants Number 22684008, 26247034, 18071005, 20674004
-and the Global COE program in Japan. M. I. and K. I. would like to acknowledge support from JSPS.
+and the Global COE program in Japan. M. Ikeda and K. Ieki would like to acknowledge support from JSPS.
 We acknowledge the support from the NSERC Discovery Grants program, the Canadian Foundation for Innovation’s
 Leadership Opportunity Fund, the British Columbia Knowledge Development Fund, and NRC in Canada.
 Computations were performed on the GPC supercomputer at the SciNet HPC Consortium \cite{scinet}
