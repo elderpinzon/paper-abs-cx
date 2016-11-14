@@ -1,9 +1,8 @@
 \section{$\sigma_{\mathrm{CX}}$ and $\sigma_{\mathrm{ABS}}$ extraction}\label{sec:xsec}
-{\color{red}
-As was mentioned in Sec. \ref{section:calibration}, our simulation is based on the \textsc{Geant4} package which uses the Bertini cascade model for modeling pion inelastic interactions but also handles other complex aspects of the analysis such as the geometrical description of the detectors. In order to estimate the number of signal ($N_{\mathrm{CX}}^{\mathrm{MC}}$) and background ($N_{\mathrm{BG}}^{\mathrm{MC}}$) events predicted by the different models shown in Sec. \ref{sec:physics} without having to rewrite the simulation using each toolkit, a scheme was developed to replace the detector simulation with a set of 2D selection, rejection and mis-reconstruction efficiencies binned in $p$-$\theta$ bins of the outgoing particles and presented in Sec. \ref{sec:efficiencies}. These were then applied to the predictions from \textsc{Neut} and \textsc{Fluka} obtained using thin target {\color{red}($\sim$1 mm)} simulations and a nominal model was selected in Sec \ref{sec:nominal}.
+As was mentioned in Sec. \ref{section:calibration}, our simulation is based on the \textsc{Geant4} package which uses the Bertini cascade model for modeling pion inelastic interactions but also handles other complex aspects of the analysis such as the geometrical description of the detectors. In order to estimate the number of signal ($N_{\mathrm{CX}}^{\mathrm{MC}}$) and background ($N_{\mathrm{BG}}^{\mathrm{MC}}$) events predicted by the different models shown in Sec. \ref{sec:physics} without having to rewrite the simulation using each toolkit, a scheme was developed to replace the detector simulation with a set of 2D selection, rejection, and mis-reconstruction efficiencies in {\color{red} momentum and angle} bins of the outgoing particles and presented in Sec. \ref{sec:efficiencies}. These were then applied to the predictions from \textsc{Neut} and \textsc{Fluka} obtained using thin target {\color{red}($\sim$1 mm)} simulations and a nominal model was selected in Sec \ref{sec:nominal}.
 
 %After the event selection described above, 
-The measured $\sigma_{\mathrm{CX}}$ was obtained for each model from $N_{\mathrm{CX}}^{\mathrm{MC}}$, $N_{\mathrm{BG}}^{\mathrm{MC}}$ and the corresponding predicted CX cross section $\sigma_{\mathrm{CX}}^{\mathrm{MC}}$ following Eq. (\ref{eqn:xsec_calc}). $\sigma_{\mathrm{ABS}}$ was obtained by subtracting $\sigma_{\mathrm{CX}}$ from $\sigma_{\mathrm{ABS+CX}}$ obtained in \cite{duet}.
+The measured $\sigma_{\mathrm{CX}}$ was obtained for each model from $N_{\mathrm{CX}}^{\mathrm{MC}}$, $N_{\mathrm{BG}}^{\mathrm{MC}}$, and the corresponding predicted CX cross section $\sigma_{\mathrm{CX}}^{\mathrm{MC}}$ following Eq. (\ref{eqn:xsec_calc}). $\sigma_{\mathrm{ABS}}$ was obtained by subtracting $\sigma_{\mathrm{CX}}$ from $\sigma_{\mathrm{ABS+CX}}$ obtained in \cite{duet}.
 
  \begin{equation} \label{eqn:xsec_calc}
  \begin{aligned}
@@ -44,7 +43,7 @@ Corrections for the fraction of muons in the beam ($f_{\mu}$) and the fraction o
 \item{{\bf Neutron selection efficiency:} the probability of a neutron from an ABS event passing the selection criteria.}
 \end{enumerate}
 
-In this scheme a true CX event would be categorized as a signal event if: the $\pi^{0}$ is selected, the ejected proton(s) is not mis-reconstructed as a ``pion-like'' track in PIA$\nu$O, and the ejected nucleons do not trigger the veto rejection. On the other hand, an ABS or quasi-elastic scattering event would be categorized as a background event if: a neutron is selected, the outgoing $\pi^{+}$ is not mis-reconstructed as a proton, the ejected proton(s) is not mis-reconstructed in PIA$\nu$O as ``pion-like'', and the the ejected nucleons do not trigger the veto rejection. 
+In this scheme a true CX event would be categorized as a signal event if: the $\pi^{0}$ is selected, the ejected proton(s) is not mis-reconstructed as a ``pion-like'' track in PIA$\nu$O, and the ejected nucleons do not trigger the veto rejection. On the other hand, an ABS or quasi-elastic scattering event would be categorized as a background event if: a neutron is selected, any outgoing $\pi^{+}$ is mis-reconstructed as a proton, all ejected proton(s) are not mis-reconstructed in PIA$\nu$O as ``pion-like'', and the the ejected nucleons do not trigger the CEMBALOS veto rejection. 
 
 \subsection{Selection of nominal model}\label{sec:nominal}
 
@@ -81,9 +80,9 @@ $p_{\pi}$ [MeV$/c$] & Model & $\sigma_{CX}^{MC}$ [mb] &  $N_{\mathrm{CX}}^{\math
 & \textsc{Neut} & 58.3 & 170.3 & 8.4 & 52.7 \\ \hline
 %\noalign{\hrule height 1pt}
 \end{tabular}
-\caption{Predicted $N_{\mathrm{CX}}^{\mathrm{MC}}$, $N_{\mathrm{BG}}^{\mathrm{MC}}$ and extracted CX cross section $\sigma_{\mathrm{CX}}$ obtained from applying the efficiency scheme to \textsc{Geant4}, \textsc{Fluka} and \textsc{Neut} model predictions. See text for discussion.}
+\caption{Predicted $N_{\mathrm{CX}}^{\mathrm{MC}}$, $N_{\mathrm{BG}}^{\mathrm{MC}}$ and extracted CX cross section $\sigma_{\mathrm{CX}}$ obtained from applying the efficiency scheme to \textsc{Geant4}, \textsc{Fluka}, and \textsc{Neut} model predictions. See text for discussion.}
 \label{tbl:eff_scheme_results}
 \end{center}
 \end{table}
 
-The differences in the extracted cross section among models range from 21.9\% at $p_{\pi}$ = 201.6 MeV$/c$ to 5.7\% at $p_{\pi}$ = 295.1 MeV$/c$, with \textsc{Fluka} and \textsc{Geant4} being the extreme case scenarios. This is consistent with the model comparison from Fig. \ref{fig:pi0kinem}. Considering the good agreement between \textsc{Fluka} and the external data in Fig. \ref{fig:pi0kinem}, the results from applying the efficiency scheme to \textsc{Fluka}, with the $N_{\mathrm{BG}}^{\mathrm{MC}}$ prediction scaled up to increase the additional backgrounds not included in the scheme, were chosen as our nominal result.}
+The differences in the extracted cross section among models range from 21.9\% at $p_{\pi}$ = 201.6 MeV$/c$ to 5.7\% at $p_{\pi}$ = 295.1 MeV$/c$, with \textsc{Fluka} and \textsc{Geant4} being the extreme case scenarios. This is consistent with the model comparison from Fig. \ref{fig:pi0kinem}. Considering the good agreement between \textsc{Fluka} and the external data in Fig. \ref{fig:pi0kinem}, the results from applying the efficiency scheme to \textsc{Fluka}, with the $N_{\mathrm{BG}}^{\mathrm{MC}}$ prediction scaled up to increase the additional backgrounds not included in the scheme, were chosen as our nominal result.

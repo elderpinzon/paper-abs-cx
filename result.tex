@@ -12,28 +12,30 @@ The measured $\sigma_{\mathrm{ABS}}$ and $\sigma_{\mathrm{CX}}$ are presented in
     295.1 & 159.4 $\pm$ 15.3 & 52.0 $\pm$ 9.3\\
     \noalign{\hrule height 1pt}
    \end{tabular}
-\caption{Measured $\sigma_{\mathrm{ABS}}$ and $\sigma_{\mathrm{CX}}$.}
+\caption{$\sigma_{\mathrm{ABS}}$ and $\sigma_{\mathrm{CX}}$ measured by DUET.}
 \label{tbl:result}
 \end{table}
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=86mm]{figures/duet_result_for_sep_paper_v2.eps}
-\caption{(Color online) DUET measurements of $\sigma_{\mathrm{ABS}}$ and $\sigma_{\mathrm{CX}}$ compared with previous measurements and ABS (red) and CX (black) model predictions from \textsc{Geant4} (solid line), \textsc{Fluka} (dashed line) and \textsc{Neut} (dotted line).}
+\caption{(Color online) DUET measurements of $\sigma_{\mathrm{ABS}}$ and $\sigma_{\mathrm{CX}}$ compared with previous measurements \cite{Bellotti1973,Ashery2,Bellotti1973_2,Jones} and ABS (red) and CX (black) model predictions from \textsc{Geant4} (solid line), \textsc{Fluka} (dashed line) and \textsc{Neut} (dotted line).}
 \label{fig:result}
 \end{center} 
 \end{figure}
-
-In addition, we provide correlation and fractional covariance coefficients for the 5 $\sigma_{\mathrm{ABS}}$ and 5 $\sigma_{\mathrm{CX}}$ measured data points in Fig. \ref{fig:covariance}. The statistical uncertainties were included as an uncorrelated diagonal matrix. There are positive correlations within the $\sigma_{\mathrm{ABS}}$ and 5 $\sigma_{\mathrm{CX}}$ measurements, and negative correlations across them, as is expected from the subtraction method used. This is the first time that a correlation matrix is published for a pion inelastic cross section measurement. It is expected to provide additional insight to the proper modeling and tuning of hadron-nucleus inelastic interactions.
+{\color{red}
+\subsection{Fractional covariance and correlation coefficients}}
+We provide the fractional covariance and correlation coefficients for the 5 $\sigma_{\mathrm{ABS}}$ and 5 $\sigma_{\mathrm{CX}}$ measured data points in the matrix in Fig. \ref{fig:covariance}. {\color{red} The diagonal and lower triangle of the matrix show the fractional covariance $(\mathrm{Sign}(V_{ij})*\sqrt{V_{ij}})$, where $V_{ij} = (\Delta\sigma_{i}\Delta\sigma_{j})/(\sigma_{i}\sigma_{j})$, and $\sigma_{k}$ and $\Delta\sigma_{k}$ are the nominal cross sections and their systematic shift, respectively. The upper triangle of the matrix shows the correlation coefficients.}
+The statistical uncertainties were included as an uncorrelated diagonal matrix. There are positive correlations within the $\sigma_{\mathrm{ABS}}$ and $\sigma_{\mathrm{CX}}$ measurements, and negative correlations across them, as is expected from the subtraction method used. This is the first time that a correlation matrix is published for a pion inelastic cross section measurement. \st{It is expected to provide additional insight to the proper modeling and tuning of hadron-nucleus inelastic interactions.}
 
 \begin{figure}[h]
 \begin{center}
-%\includegraphics[width=86mm]{figures/duet_fractional_covariance_forpaper_v3.eps}
-\includegraphics[width=86mm]{figures/duet_fractional_covariance_and_correlation_forpaper.eps}
-\caption{(Color online) Fractional covariance and correlation for the DUET measurements of $\sigma_{\mathrm{ABS}}$ and $\sigma_{\mathrm{CX}}$. {\color{red} The upper triangle of the matrix shows the correlation coefficients, while the diagonal and lower triangle show the covariance coefficients $(\mathrm{Sign}(V_{ij})*\sqrt{V_{ij}})$.}}
+\includegraphics[width=86mm]{figures/duet_fractional_covariance_forpaper_v4.eps}
+%\includegraphics[width=86mm]{figures/duet_fractional_covariance_and_correlation_forpaper_v4.eps}
+\caption{(Color online) Fractional covariance and correlation for the DUET measurements of $\sigma_{\mathrm{ABS}}$ and $\sigma_{\mathrm{CX}}$. The  diagonal and lower triangle show the covariance $(\mathrm{Sign}(V_{ij})*\sqrt{V_{ij}})$, while the upper triangle of the matrix shows the correlation coefficients.}
 \label{fig:covariance}
 \end{center} 
 \end{figure}
 
 \section{Summary}
-To summarize, we obtained $\sigma_{\mathrm{ABS}}$ and $\sigma_{\mathrm{CX}}$ for positive pions in carbon nuclei at five incident momenta between 201.6 MeV$/c$ to 295.1 MeV$/c$. A covariance matrix for the 10 measured data points was produced. This result will be an important input to existing models such as \textsc{Geant4} or \textsc{NEUT} to constrain sub-GeV pion interactions.
+We obtained $\sigma_{\mathrm{ABS}}$ and $\sigma_{\mathrm{CX}}$ for positive pions in carbon nuclei at five incident momenta between 201.6 MeV$/c$ to 295.1 MeV$/c$. A covariance matrix for the 10 measured data points was produced. This result will be an important input to existing models such as \textsc{Geant4} or \textsc{NEUT} to constrain sub-GeV pion interactions.
