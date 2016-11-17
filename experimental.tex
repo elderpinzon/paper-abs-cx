@@ -3,7 +3,7 @@ The DUET experiment used the M11 beam line at TRIUMF which produced a $\pi^{+}$ 
 %Particle identification was obtained by combining time-of-flight (TOF) information and relative light yield in a Cherenkov detector placed in the beam path. 
 
 \begin{figure}[ht]
-\includegraphics[width=90mm]{figures/duet_schematic_forpaper_v2.pdf}
+\includegraphics[width=90mm]{figures/duet_schematic_for_paper_v2.eps}
 \caption{Schematic overview of the experimental apparatus.}
 \label{fig:config}
 \end{figure}
@@ -15,12 +15,12 @@ The DUET experiment used the M11 beam line at TRIUMF which produced a $\pi^{+}$ 
 %\end{center} 
 %\end{figure}
 
-PIA$\nu$O (PIon detector for Analysis of neutrino Oscillation) served as an active carbon target for pion interactions and  provided excellent tracking capabilities and $dE/dx$ measurements of charged particles. It provided sufficient information to select ABS+CX events by requiring no observed $\pi^{+}$ in the final state. It consisted of 16 horizontal and 16 vertical layers of scintillating material, each with 32 fibers. The dimension of the region where the fibers cross each other was {\color{red}$49\times49\times51$ mm$^3$}, providing $(1.518\pm0.007)\times10^{24}$ carbon target nuclei in its fiducial volume. The scintillation light from the fibers was read out by multi-anode photomultiplier tubes. 16 NaI crystal detectors were placed around the tracker region but are not used for this analysis.
+PIA$\nu$O (PIon detector for Analysis of neutrino Oscillation) served as an active carbon target for pion interactions and  provided excellent tracking capabilities and $dE/dx$ measurements of charged particles. It provided sufficient information to select ABS+CX events by requiring no observed $\pi^{+}$ in the final state. It consisted of 16 horizontal and 16 vertical layers of scintillating material, each with 32 fibers. The dimension of the region where the fibers cross each other was $49\times49\times51$ mm$^3$, providing $(1.518\pm0.007)\times10^{24}$ carbon target nuclei in its fiducial volume. The scintillation light from the fibers was read out by multi-anode photomultiplier tubes. 16 NaI crystal detectors were placed around the tracker region but are not used for this analysis.
 
 The forward-going photons following the decay of a $\pi^0$ produced in a CX interaction were identified using the CEMBALOS (Charge Exchange Measurement By A Lead On Scintillator) detector.
 
 \subsection{CEMBALOS}
-The CEMBALOS detector was a scaled down (1/6) version of the Fine-Grained Detectors (FGDs) \cite{fgd} of T2K. It was located 25 cm downstream of PIA$\nu$O. {\color{red}The active portion of the detector was composed of} scintillator bars made of polystyrene co-extruded with a 0.25 mm thick reflective coating of polystyrene mixed with TiO$_2$. The light yield from the far end of a bar was measured to be up to 16-18 photoelectrons (p.e.) for a minimum ionizing particle. The optical crosstalk through the TiO$_2$ coating between bars was measured to be 0.5$\pm$0.02\%. 
+The CEMBALOS detector was a scaled down (1/6) version of the Fine-Grained Detectors (FGDs) \cite{fgd} of T2K. It was located 25 cm downstream of PIA$\nu$O. The active portion of the detector was composed of scintillator bars made of polystyrene co-extruded with a 0.25 mm thick reflective coating of polystyrene mixed with TiO$_2$. The light yield from the far end of a bar was measured to be up to 16-18 photoelectrons (p.e.) for a minimum ionizing particle. The optical crosstalk through the TiO$_2$ coating between bars was measured to be 0.5$\pm$0.02\%. 
 
 The scintillator bars were arranged into 15 XY modules oriented perpendicular to the beam. Each XY module contained 32 bars in the $x$ direction glued to 32 bars in the $y$ direction. Layers of 0.25 mm thick fiberglass (G10) were glued to both the upstream and downstream surfaces to provide support, and no adhesive was applied between the bars. Each module had dimensions of 32$\times$32$\times$2.02 cm$^3$. Unlike the FGDs, 0.8$\sim$1 mm thick lead layers were interspersed in between each module to enhance photon conversion. 
 %Figure \ref{fig:cembalos} shows a picture of CEMBALOS.
@@ -64,10 +64,11 @@ The distribution of dark noise pulse heights was used to measure $\left\langle P
 \end{figure}
 
 %The calibration steps described corrected MPPC responses which are assumed to be proportional to the number of scintillation photons. 
-{\color{red}\item{The final conversion from number of scintillation photons to energy deposition measured in p.e. involved  an empirical normalization constant and Birk's formula was used to account for the nonlinearity in the scintillator response. We adopted 0.0208$\pm$0.0003(stat)$\pm$0.0023(sys) cm/MeV for the value of Birk's constant as measured by the K2K SciBar group \cite{scibar}. A minimum of 5 p.e. was required to label an energy deposit as a hit.}}
+\item{The final conversion from number of scintillation photons to energy deposition measured in p.e. involved  an empirical normalization constant and Birk's formula was used to account for the nonlinearity in the scintillator response. We adopted 0.0208$\pm$0.0003(stat)$\pm$0.0023(sys) cm/MeV for the value of Birk's constant as measured by the K2K SciBar group \cite{scibar}. A minimum of 5 p.e. was required to label an energy deposit as a hit.}
 \end{enumerate}
 
-A control sample of beam muons in the $p_{\pi}$=237.2 MeV$/c$ setting traversing CEMBALOS was used to calibrate the charge simulation. Fig. \ref{fig:muoncharge} shows the deposited charge distribution of through-going muons for data and MC after the calibration procedure. \st{The agreement is satisfactory.}
+A control sample of beam muons in the $p_{\pi}$=237.2 MeV$/c$ setting traversing CEMBALOS was used to calibrate the charge simulation. Fig. \ref{fig:muoncharge} shows the deposited charge distribution of through-going muons for data and MC after the calibration procedure. 
+%\st{The agreement is satisfactory.}
 %At least 4 hits on both the first and last 5 layers were required. The angular distributions of the reconstructed tracks in CEMBALOS for data and MC agree.
 
 \begin{figure}[!h]
