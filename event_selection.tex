@@ -16,7 +16,7 @@ A simulated CX event is shown in Fig. \ref{fig:event}. The upstream horizontal (
 The PIA$\nu$O detector track reconstruction algorithm used charge deposition information to reconstruct and identify charged particles in the detector and to identify an interaction vertex within a defined fiducial volume (FV). A detailed description can be found in Sec. III of \cite{duet}. A summary of the upstream selection criteria follows:
 \begin{enumerate}
 \item {\bf Good incident $\pi^{+}$\\}
-This selection criteria is threefold: firstly, an incident $\pi^{+}$ was selected using TOF and Cherenkov light information. Secondly, a straight track, normal to the incident plane, leaving hits in the first 5 layers was required. Thirdly, this incident track was required to enter a defined fiducial volume (FV).
+This selection criteria is threefold: firstly, an incident $\pi^{+}$ was selected using {\color{red}time-of-flight} (TOF) and Cherenkov light information. Secondly, a straight track, normal to the incident plane, leaving hits in the first 5 layers was required. Thirdly, this incident track was required to enter a defined fiducial volume (FV).
 \item {\bf Vertex inside the FV\\}
 Events with pion interactions were selected by requiring a reconstructed vertex inside the FV.  A vertex was defined as the intersection of reconstructed tracks. This removed through-going pion events, as well as small-angle pion scattering events.
 \item {\bf No $\pi^{+}$ final track\\}
@@ -43,13 +43,13 @@ The remaining background after the veto cut are produced by neutrons from ABS ev
 
 \begin{figure}[ht]
  \includegraphics[width=86mm]{figures/duettag_nhits_20000_forpaper_v4.eps}
- \caption{(Color online) Distribution of the number of hits in CEMABLOS for Data and MC (broken down into topologies and listed with their corresponding percentage composition) in the $p_\pi=$237.2 MeV$/c$ setting after applying the veto cut. Topologies contributing less than 1\% are not plotted.}
+ \caption{(Color online) Distribution of the number of hits in CEMBALOS for Data and MC (broken down into topologies and listed with their corresponding percentage composition) in the $p_\pi=$237.2 MeV$/c$ setting after applying the veto cut. Topologies contributing less than 1\% are not plotted.}
  \label{fig:nhits}
 \end{figure}
 
 \begin{figure}[ht]
  \includegraphics[width=86mm]{figures/draw2Dcut_draw.eps}
- \caption{(Color online) Distribution of the number of hits in CEMABLOS vs. charge deposited for MC in the $p_\pi=$237.2 MeV$/c$ setting after applying the requirement of a minimum of 5 hits. The blue entries are true CX events, whereas the black boxes correspond to neutron background events.}
+ \caption{(Color online) Distribution of the number of hits in CEMBALOS vs. charge deposited for MC in the $p_\pi=$237.2 MeV$/c$ setting after applying the requirement of a minimum of 5 hits. The blue entries are true CX events, whereas the black boxes correspond to neutron background events.}
  \label{fig:nhitsvsCharge}
 \end{figure}
 
