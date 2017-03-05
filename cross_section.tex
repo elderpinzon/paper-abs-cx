@@ -1,5 +1,5 @@
 \section{$\sigma_{\mathrm{CX}}$ and $\sigma_{\mathrm{ABS}}$ extraction}\label{sec:xsec}
-As was mentioned in Sec. \ref{section:calibration}, our simulation is based on the \textsc{Geant4} package which uses the Bertini cascade model for modeling pion inelastic interactions but also handles other complex aspects of the analysis such as the geometrical description of the detectors. In order to estimate the number of signal ($N_{\mathrm{CX}}^{\mathrm{MC}}$) and background ($N_{\mathrm{BG}}^{\mathrm{MC}}$) events predicted by the different models shown in Sec. \ref{sec:physics} without having to rewrite the simulation using each toolkit, a scheme was developed to replace the detector simulation with a set of 2D selection, rejection, and mis-reconstruction efficiencies in momentum and angle bins of the outgoing particles and presented in Sec. \ref{sec:efficiencies}. These were then applied to the predictions from \textsc{Neut} and \textsc{Fluka} obtained using thin target ($\sim$1 mm) simulations and a nominal model was selected in Sec \ref{sec:nominal}.
+As was mentioned in Sec. \ref{section:calibration}, our simulation is based on the \textsc{Geant4} package which uses the Bertini cascade model for modeling pion inelastic interactions but also handles other complex aspects of the analysis such as the geometrical description of the detectors. In order to estimate the number of signal ($N_{\mathrm{CX}}^{\mathrm{MC}}$) and background ($N_{\mathrm{BG}}^{\mathrm{MC}}$) events predicted by the different models shown in Sec. \ref{sec:physics} without having to rewrite the simulation using each toolkit, a scheme was developed to replace the detector simulation with a set of 2D selection, rejection, and mis-reconstruction efficiencies in momentum and angle bins of the outgoing particles and is presented in Sec. \ref{sec:efficiencies}. These were then applied to the predictions from \textsc{Neut} and \textsc{Fluka} obtained using thin target ($\sim$1 mm) simulations and a nominal model was selected in Sec \ref{sec:nominal}.
 
 %After the event selection described above, 
 The measured $\sigma_{\mathrm{CX}}$ was obtained for each model from $N_{\mathrm{CX}}^{\mathrm{MC}}$, $N_{\mathrm{BG}}^{\mathrm{MC}}$, and the corresponding predicted CX cross section $\sigma_{\mathrm{CX}}^{\mathrm{MC}}$ following Eq. (\ref{eqn:xsec_calc}). $\sigma_{\mathrm{ABS}}$ was obtained by subtracting $\sigma_{\mathrm{CX}}$ from $\sigma_{\mathrm{ABS+CX}}$ obtained in \cite{duet}.
@@ -15,7 +15,7 @@ The measured $\sigma_{\mathrm{CX}}$ was obtained for each model from $N_{\mathrm
  \end{aligned}
  \end{equation} 
 
-Corrections for the fraction of muons in the beam ($f_{\mu}$) and the fraction of interactions on TiO$_2$ nuclei ($R_{\mathrm{TiO}_2}^{\mathrm{Data}}$ and $R_{\mathrm{TiO}_2}^{\mathrm{MC}}$) were also applied. 
+Corrections for the fraction of muons in the beam ($f_{\mu}$) and the fraction of interactions on TiO$_2$ nuclei ($R_{\mathrm{TiO}_2}^{\mathrm{Data}}$ and $R_{\mathrm{TiO}_2}^{\mathrm{MC}}$) were also applied as in \cite{duet}.
 
 \subsection{Selection, rejection and mis-reconstruction efficiencies}\label{sec:efficiencies}
 
@@ -28,7 +28,7 @@ Corrections for the fraction of muons in the beam ($f_{\mu}$) and the fraction o
  \label{fig:pi0_selection}
 \end{figure}
 
-\item{{\bf Proton/neutron veto rejection:} the probability that an ejected proton or neutron will produce hits in the first two XY modules of CEMBALOS. Fig. \ref{fig:proton_rejection} shows the rejection efficiency for protons in the the 201.6 MeV$/c$ setting. The CEMBALOS forward acceptance ($<45^{\circ}$) can be clearly seen.}
+\item{{\bf Proton/neutron veto rejection:} the probability that an ejected proton or neutron will produce hits in the first two XY modules of CEMBALOS. Fig. \ref{fig:proton_rejection} shows the rejection efficiency for protons in the 201.6 MeV$/c$ setting. The CEMBALOS forward acceptance ($<45^{\circ}$) can be clearly seen.}
 
 \begin{figure}[h]
  \includegraphics[width=86mm]{figures/ProtonRejectionEfficiency_200.eps}
@@ -43,7 +43,7 @@ Corrections for the fraction of muons in the beam ($f_{\mu}$) and the fraction o
 \item{{\bf Neutron selection efficiency:} the probability of a neutron from an ABS event passing the selection criteria.}
 \end{enumerate}
 
-In this scheme a true CX event would be categorized as a signal event if: the $\pi^{0}$ is selected, the ejected proton(s) is not mis-reconstructed as a ``pion-like'' track in PIA$\nu$O, and the ejected nucleons do not trigger the veto rejection. On the other hand, an ABS or quasi-elastic scattering event would be categorized as a background event if: a neutron is selected, any outgoing $\pi^{+}$ is mis-reconstructed as a proton, all ejected proton(s) are not mis-reconstructed in PIA$\nu$O as ``pion-like'', and the the ejected nucleons do not trigger the CEMBALOS veto rejection. 
+In this scheme a true CX event would be categorized as a signal event if: the $\pi^{0}$ is selected, the ejected proton(s) is not mis-reconstructed as a ``pion-like'' track in PIA$\nu$O, and the ejected nucleons do not trigger the veto rejection. On the other hand, an ABS or quasi-elastic scattering event would be categorized as a background event if: a neutron is selected, any outgoing $\pi^{+}$ is mis-reconstructed as a proton, all ejected proton(s) are not mis-reconstructed in PIA$\nu$O as ``pion-like'', and the ejected nucleons do not trigger the CEMBALOS veto rejection. 
 
 \subsection{Selection of nominal model}\label{sec:nominal}
 
