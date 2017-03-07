@@ -34,7 +34,7 @@ The scintillator bars were arranged into 15 XY modules oriented perpendicular to
 
 The scintillation light from each bar was collected by a 1$\pm$0.02 mm diameter wavelength shifting (WLS) double-clad Kuraray Y11 (200) S-35 J-type fiber inserted through an axial hole. The absorption and subsequent emission wavelengths for these fibers were 430 nm and 476 nm, respectively. Unlike the FGDs, due to limited availability only fibers in the last 3 XY modules had one of their ends mirrored to enhance light collection by aluminizing.
 
-Multi-Pixel Photon Counters (MPPCs) manufactured by Hamamatsu Photonics (S10362-13-050C) were used as photosensors to measure the scintillation light. These provided excellent photon counting capability with higher quantum efficiency than photo-multipliers for the spectra of light produced by the WLS fibers. The outer dimensions of the MPPC were 5$\times$6 mm$^2$, while the sensitive area was 1.3$\times$1.3 mm$^2$ containing 667 avalanche photo-diode pixels. The small size allowed for using one MPPC per bar, eliminating the possibility of crosstalk at the sensor. A custom connector was developed to achieve good optical coupling.
+Multi-Pixel Photon Counters (MPPCs) manufactured by Hamamatsu Photonics (S10362-13-050C) were used as photosensors to measure the scintillation light. These provided excellent photon counting capability with higher quantum efficiency than photomultipliers for the spectra of light produced by the WLS fibers. The outer dimensions of the MPPC were 5$\times$6 mm$^2$, while the sensitive area containing 667 avalanche photo-diode pixels was 1.3$\times$1.3 mm$^2$. The small size allowed for using one MPPC per bar, eliminating the possibility of crosstalk at the sensor. A custom connector was developed to achieve good optical coupling.
 The XY modules were held rigidly in place inside an aluminum light-tight box. The readout electronics were mounted on the outer sides of the box to separate elements generating heat and to prevent temperature induced effects on the MPPCs. 
 %(Add information about the support structure)
 
@@ -46,14 +46,14 @@ The simulation of the CEMBALOS detector was based on that developed for the FGDs
 The energy deposit from charged particles traversing the scintillating bars was calculated from the pulse height ($PH$) of the digitized MPPC waveforms by the following procedure:
 
 \begin{enumerate}
-\item {\it Conversion from PH to photoelectrons:} The $PH$ measured in ADC units were translated into the number of photoelectrons $N_{pe}$ by normalizing to the average pulse height $\left\langle PH \right\rangle$ corresponding to a single-pixel avalanche. 
+\item {\it Conversion from PH to photoelectrons (p.e.):} The $PH$ measured in ADC units was translated into the number of photoelectrons $N_{pe}$ by normalizing to the average pulse height $\left\langle PH \right\rangle$ corresponding to a single-pixel avalanche. 
 \begin{equation}
 N_{pe} = PH/\left\langle PH \right\rangle
 \end{equation}
 The distribution of dark noise pulse heights was used to measure $\left\langle PH \right\rangle$ and it was found to be 48.65 ADC units. 
 \item{\it Corrections for variations in overvoltage:} Temperature variations can change the overvoltage, the difference between the operating and breakdown voltages in the MPPCs, affecting the photon detection efficiency and the crosstalk and after-pulsing probabilities. Empirical corrections were applied to compensate for these effects.
 \item{\it Correction for saturation of the MPPCs:} Since each MPPC has a finite number of pixels, the pulse height can get saturated. A correction based on an empirical exponential expression was applied.
-\item{\it Correction for bar-to-bar variations:} Minor variations in the fiber-MPPC coupling, scintillation material, fiber mirroring, diameter of the hole, etc. can introduce a difference in the light yield for each bar. Those variations are accounted for by an additional correction ($C_{bar}$) representing the factor by which the efficiency for conversion of energy deposition in the bar to number of photons hitting the MPPCs differs from its value averaged over all the bars in CEMBALOS.
+\item{\it Correction for bar-to-bar variations:} The differences in light yield from each CEMBALOS scintillator bar due to minor variations in the fiber-MPPC coupling, scintillation material, fiber mirroring, etc. were accounted for in a manner similar to~\cite{fgd} by an additional correction factor ($C_{bar}$).
 \item{\it Correction for light loss along the bar:} The light attenuation in each fiber was measured for both mirrored and unmirrored bars using cosmic rays. Fig. \ref{fig:attcurves} shows the resulting fitted distributions for the measured yield ($N_{DPE}$) of detectable photoelectrons as a function of the distance of the hit to the MPPC. The fit function is an empirical descriptor of the attenuation process.
 \begin{figure}[!h]
 \begin{center}
@@ -75,7 +75,7 @@ A control sample of beam muons in the $p_{\pi}$=237.2 MeV$/c$ setting traversing
 \begin{center}
 %\includegraphics[width=80mm]{figures/muoncharge.pdf}
 \includegraphics[width=85mm]{figures/muon_charge_calib.eps}
-\caption{Charge per CEMBALOS hit distribution (in photoelectrons) of through-going muons in the $p_{\pi}$=237.2 MeV$/c$ setting for data (circles) and MC (solid line), after the calibration procedure was applied. The statistical error bars are too small to appear.}
+\caption{Charge per CEMBALOS hit distribution (in photoelectrons) of through-going muons in the $p_{\pi}$=237.2 MeV$/c$ setting for data (circles) and MC (solid line), after the calibration procedure was applied. The statistical error bars are too small to be visible.}
 \label{fig:muoncharge}
 \end{center}
 \end{figure}
